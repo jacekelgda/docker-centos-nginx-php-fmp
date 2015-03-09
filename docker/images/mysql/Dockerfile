@@ -1,4 +1,4 @@
-FROM skydiverss/mysql-centos
+FROM jacekelgda/docker-mysql-centos
 
 ENV ROOTPASSWD Passw0rd
 ENV DBNAME wordpress
