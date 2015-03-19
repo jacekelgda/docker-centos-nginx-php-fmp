@@ -1,11 +1,5 @@
 FROM jacekelgda/docker-centos-nginx:latest
 
-ENV RDS_HOSTNAME foo
-ENV RDS_DB_NAME foo
-ENV RDS_PASSWORD foo
-ENV RDS_USERNAME foo
-ENV RDS_PORT foo
-
 RUN \
   yum install -y yum-utils && \
 
