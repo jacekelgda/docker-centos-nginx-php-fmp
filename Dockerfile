@@ -15,3 +15,13 @@ RUN \
 
 ADD docker/images/php/container-files /
 
+RUN \
+  yum install -y ruby ruby-devel nodejs npm zlib-devel libpng-devel && \
+
+  yum clean all && \
+
+  npm update -g npm && \
+
+  npm install -g gulp grunt-cli bower browser-sync protractor && \
+
+  echo 'gem: --no-document' > /etc/gemrc && gem update --system && gem install bundler
