@@ -22,6 +22,6 @@ RUN \
 
   npm update -g npm && \
 
-  npm install -g gulp grunt-cli bower browser-sync protractor && \
+  npm install -g grunt gulp grunt-cli bower browser-sync protractor && \
 
   echo 'gem: --no-document' > /etc/gemrc && gem update --system && gem install bundler
